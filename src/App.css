@@ -3,9 +3,10 @@
   text-decoration: none;
   margin: 0;
   padding: 0;
+  border: none;
 }
 
-body{
+/* body{
   background-color: aqua;
   display: flex;
   flex-direction: column;
@@ -23,12 +24,12 @@ body{
   width: 100%;
 }
 
-h1{
+.card h1{
   font-size: 40px;
   color: purple;
 }
 
-p{
+.card p{
   font-size: 25px;
   color: blue;
-}
+} */
