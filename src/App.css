@@ -6,7 +6,7 @@
   border: none;
 }
 
-body{
+/* body{
   background-color: aqua;
   display: flex;
   flex-direction: column;
@@ -32,4 +32,4 @@ body{
 .card p{
   font-size: 25px;
   color: blue;
-}
+} */
