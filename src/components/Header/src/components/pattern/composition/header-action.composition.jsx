@@ -4,8 +4,8 @@ export default function Action(props) {
   return (
     <div>
       <ActionContainer>
-        <ActionSubmit>{props.submit}</ActionSubmit>
-        <ActionCancel>{props.cancel}</ActionCancel>
+        <ActionSubmit href={props.link}>{props.submit}</ActionSubmit>
+        <ActionCancel href={props.linkBuy}>{props.cancel}</ActionCancel>
       </ActionContainer>
     </div>
   );
