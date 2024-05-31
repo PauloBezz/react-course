@@ -4,7 +4,7 @@ import "../../styles.css";
 export default function Card(props) {
   return (
     <div className="card-container">
-      <img src={ImageBlog} alt="ImageBlog" className="card-image" />
+      <img src={props.image ? props.image : ImageBlog} alt="ImageBlog" className="card-image" />
 
       <div className="card-context">
         <h5>{props.category}</h5>
@@ -13,7 +13,7 @@ export default function Card(props) {
       </div>
 
       <div className="card-person">
-        <img src={Icon} alt="Icon" className="card-icon" />
+        <img src={props.icon ? props.icon : Icon} alt="Icon" className="card-icon" />
         <div className="person-text">
           <h5>{props.name}</h5>
           <div className="person-time">
