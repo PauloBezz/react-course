@@ -7,7 +7,7 @@ const TeamUsers = [
     name: "Mickey Mouse",
     job: "Apresentador",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
+      "Inspirado por personalidades do cinema mudo como Charlie Chaplin e Douglas Fairbanks, Mickey é tradicionalmente caracterizado como um oprimido simpático que sobrevive com coragem e engenhosidade diante de desafios maiores do que ele.",
     mediaSocial: {
       linkedin: "https://br.linkedin.com/",
       x: "https://x.com/",
@@ -19,7 +19,7 @@ const TeamUsers = [
     name: "Mickey Mouse",
     job: "Apresentador",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
+      "Inspirado por personalidades do cinema mudo como Charlie Chaplin e Douglas Fairbanks, Mickey é tradicionalmente caracterizado como um oprimido simpático que sobrevive com coragem e engenhosidade diante de desafios maiores do que ele.",
     mediaSocial: {
       linkedin: "https://br.linkedin.com/",
       x: "https://x.com/",
@@ -31,7 +31,7 @@ const TeamUsers = [
     name: "Mickey Mouse",
     job: "Apresentador",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
+      "Inspirado por personalidades do cinema mudo como Charlie Chaplin e Douglas Fairbanks, Mickey é tradicionalmente caracterizado como um oprimido simpático que sobrevive com coragem e engenhosidade diante de desafios maiores do que ele.",
     mediaSocial: {
       linkedin: "https://br.linkedin.com/",
       x: "https://x.com/",
@@ -43,7 +43,7 @@ const TeamUsers = [
     name: "Mickey Mouse",
     job: "Apresentador",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
+      "Inspirado por personalidades do cinema mudo como Charlie Chaplin e Douglas Fairbanks, Mickey é tradicionalmente caracterizado como um oprimido simpático que sobrevive com coragem e engenhosidade diante de desafios maiores do que ele.",
     mediaSocial: {
       linkedin: "https://br.linkedin.com/",
       x: "https://x.com/",
@@ -55,7 +55,7 @@ const TeamUsers = [
     name: "Mickey Mouse",
     job: "Apresentador",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
+      "Inspirado por personalidades do cinema mudo como Charlie Chaplin e Douglas Fairbanks, Mickey é tradicionalmente caracterizado como um oprimido simpático que sobrevive com coragem e engenhosidade diante de desafios maiores do que ele.",
     mediaSocial: {
       linkedin: "https://br.linkedin.com/",
       x: "https://x.com/",
@@ -67,7 +67,7 @@ const TeamUsers = [
     name: "Mickey Mouse",
     job: "Apresentador",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
+      "Inspirado por personalidades do cinema mudo como Charlie Chaplin e Douglas Fairbanks, Mickey é tradicionalmente caracterizado como um oprimido simpático que sobrevive com coragem e engenhosidade diante de desafios maiores do que ele.",
     mediaSocial: {
       linkedin: "https://br.linkedin.com/",
       x: "https://x.com/",
@@ -84,6 +84,7 @@ export default function TeamComposition() {
         title={"Our Team"}
         text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. "}
       />
+      <div className="team-content">
       {TeamUsers.map((user, key) => {
         return (
           <Team.Content
@@ -98,6 +99,8 @@ export default function TeamComposition() {
           />
         );
       })}
+      </div>
+
       <Team.Main
         title={"We’re hiring!"}
         text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. "}
