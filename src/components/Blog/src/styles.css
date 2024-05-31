@@ -5,20 +5,33 @@
     box-sizing: border-box;
 }
 
-.section-container{
+.blog-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-content {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+
+}
+
+.section-container {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin-top: 112px;
     margin-bottom: 80px;
 }
 
-.section-container > h4 {
+.section-container>h4 {
     font-size: 16px;
     font-weight: 600;
 }
 
-.section-container > h1{
+.section-container>h1 {
     display: flex;
     font-size: 48px;
     font-weight: 700;
@@ -26,107 +39,107 @@
     margin-bottom: 24px;
 }
 
-.section-container > p{
+.section-container>p {
     font-size: 18px;
 }
 
-.card-container{
+.card-container {
     display: flex;
-    width: 100%;
+    width: fit-content;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 24px;
-    margin-bottom: 64px;
+    margin: auto;
 }
 
-.card-image{
+.card-image {
     width: 416px;
     height: 300px;
 }
 
-.card-context{
+.card-context {
     display: flex;
     align-self: center;
     flex-direction: column;
     gap: 8px;
 }
 
-.card-context > h5{
+.card-context>h5 {
     font-size: 14px;
     font-weight: 600;
 }
 
-.card-context > h3 {
+.card-context>h3 {
     font-size: 24px;
     font-weight: 700;
 }
 
-.card-context > p {
+.card-context>p {
     font-size: 16px;
     width: 416px;
     font-weight: 400;
 }
 
-.card-person{
+.card-person {
     display: flex;
     width: 416px;
     align-items: center;
     justify-content: start;
     gap: 16px;
 }
-.person-text{
+
+.person-text {
     display: flex;
     flex-direction: column;
     gap: 3px;
 }
 
-.person-text > h5 {
+.person-text>h5 {
     font-size: 14px;
     font-weight: 600;
 }
 
-.person-time > p {
+.person-time>p {
     font-size: 14px;
 }
 
-.card-icon{
+.card-icon {
     width: 48px;
     height: 48px;
+    border-radius: 100%;
 }
 
-.person-time{
+.person-time {
     display: flex;
     align-items: center;
     gap: 8px;
-    
 }
 
-.person-point{
+.person-point {
     display: flex;
     width: 5px;
     height: 5px;
-
     border-radius: 100%;
     background-color: black;
-
 }
 
-
-.button-container{
+.button-container {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 64px;
+    margin-bottom: 112px;
 }
 
-.button-container > button {
+.button-container>button {
     border: 1px solid black;
     background-color: transparent;
     width: 104px;
     height: 48px;
 }
 
-.button-container > button {
+.button-container>button {
     font-size: 16px;
     align-self: center;
 }
