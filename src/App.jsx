@@ -1,8 +1,10 @@
 // import BlogComposition from "./components/Blog/src";
 // import TeamComposition from "./components/Team";
 import "./App.css";
+import NavBar from "./styles/css-modules/components/NavBar";
 // import { Titulo } from "./styles.c/css-modules/components/Titulo"
-import { HeaderComposition } from "./components/Header/src/components/pattern";
+// import { HeaderComposition } from "./components/Header/src/components/pattern";
+// import Accordion from "./hooks/components/accordion/index";
 // import Square from "./styles/styled-component/components/Square";
 // import Headline from "./styles.c/css-modules/components/Headline"
 
@@ -12,10 +14,11 @@ function App() {
       {/* <TeamComposition /> */}
       {/* <BlogComposition/> */}
       {/* <Square borderStyle="dotted"/> */}
-      <HeaderComposition />
+      {/* <HeaderComposition /> */}
       {/* <Titulo/>
       <Headline/> */}
-      <div className="flex bg-black w-10 h-40"></div>
+      {/* <Accordion/> */}
+      <NavBar one={'Link'} two={'Link'} three={'Link'} four={'Link'}/>
     </body>
   );
 }
