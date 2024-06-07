@@ -19,10 +19,10 @@ Projeto criado para aprender React com Lucas Correa no SENAI Suiço-Brasileira
    - Tailwind CSS: Permite escrever classes de CSS diretamente no atributo className da tag. Facilita a criação de um arquivo global de variáveis de estilo para evitar a repetição.
 
 # Links para seus estudos
-- [React]https://react.dev/
+- [React]
 
-- [Styled-components]https://styled-components.com/
+- [Styled-components]
 
-- [CSS Modules]https://github.com/css-modules/css-modules
+- [CSS Modules]
 
-- [Tailwind CSS]https://tailwindcss.com/
+- [Tailwind CSS]
