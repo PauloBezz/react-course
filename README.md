@@ -11,6 +11,8 @@ Projeto criado para aprender React com Lucas Correa no SENAI Suiço-Brasileira
    Tailwind.css - escrita simples de CSS dentro do className da tag, permite a criação de um arquivo global de variáveis de estilo para evitar a repetição
 
 # Links para seus estudos
-https://react.dev/
-https://styled-components.com/
-https://tailwindcss.com/
+- https://react.dev/
+
+- https://styled-components.com/
+
+- https://tailwindcss.com/
