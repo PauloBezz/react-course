@@ -4,13 +4,19 @@ Projeto criado para aprender React com Lucas Correa no SENAI Suiço-Brasileira
 
 # O que foi ensinado até o momento?
 
-   Aprendemos como a biblioteca React prática com seus componentes eo uso de props. Outro aprendizado foi o uso de map, criação de funções atualmente estou aprendendo a utilizar hooks(useState) e ter foco em codar. A autonomia de procurar seus erros também foi um assunto em que estou desenvolvendo e aprimorando. Por fim, as diferentes maneiras de estilizar o código é 
+   Aprendemos como a biblioteca React é prática com seus componentes e o uso de props. Outros tópicos abordados incluem:
+   - Uso do método map para renderização de listas.
+   - Criação de funções.
+   - Utilização de hooks, como useState.
+   - Importância do foco ao codar.
+   - Desenvolvimento da autonomia para encontrar e corrigir erros.
+   - Diferentes maneiras de estilizar o código.
 
 # Quais novas estruturas de estilização com CSS aprendemos?
 
-   - Styled-components - escrita de CSS em JS, dessa forma a estilização da tag nomeada é chamada como um componente e recebe os atributOs da tag HTML. Informação: no vs code existe uma extensão chamada styled-components para ajudá-lo no código
-   - Styles.Module.css - criando uma variável styles, em sua tag será usado dentro da className = {variável + chave única } e mesmo a chave sendo reutilizada em outro componente seu estilo não será global.
-   - Tailwind.css - escrita simples de CSS dentro do className da tag, permite a criação de um arquivo global de variáveis de estilo para evitar a repetição
+   - Styled-components: Permite escrever CSS em JavaScript. A estilização da tag nomeada é chamada como um componente e recebe os atributos da tag HTML. No VS Code, existe uma extensão chamada styled-components para auxiliar no código.
+   - CSS Modules: Utiliza arquivos .module.css, onde as classes são importadas como variáveis. Na tag, a classe é usada dentro de className={styles.classe}. Mesmo que a chave seja reutilizada em outro componente, seu estilo não será global.
+   - Tailwind CSS: Permite escrever classes de CSS diretamente no atributo className da tag. Facilita a criação de um arquivo global de variáveis de estilo para evitar a repetição.
 
 # Links para seus estudos
 - https://react.dev/
