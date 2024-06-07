@@ -1,7 +1,7 @@
 // import BlogComposition from "./components/Blog/src";
 // import TeamComposition from "./components/Team";
 import "./App.css";
-import NavBar from "./styles/css-modules/components/NavBar";
+import Navbar from "./styles/css-modules/components/NavBar";
 // import { Titulo } from "./styles.c/css-modules/components/Titulo"
 // import { HeaderComposition } from "./components/Header/src/components/pattern";
 // import Accordion from "./hooks/components/accordion/index";
@@ -18,7 +18,7 @@ function App() {
       {/* <Titulo/>
       <Headline/> */}
       {/* <Accordion/> */}
-      <NavBar one={'Link'} two={'Link'} three={'Link'} four={'Link'}/>
+      <Navbar one={'Link One'} two={'Link Two'} three={'Link Three'} four={'Link Four'} buttonOne={'Button'} buttonTwo={'Button'} />
     </body>
   );
 }
