@@ -70,7 +70,7 @@ export default function BlogComposition() {
           })}
         </div>
 
-        <Blog.Button button={"View all"} />
+        <Blog.Button button={"View all"}/>
       </div >
     </>
   );
