@@ -11,7 +11,7 @@ import FooterComposition from "./styles/styled-component/components/Footer/src/p
 
 function App() {
   return (
-    <body>
+    <body className="bg-[#FFEBB7]">
       {/* <TeamComposition /> */}
       {/* <Square borderStyle="dotted"/> */}
       {/* <Titulo/> */}
