@@ -7,7 +7,7 @@ import { HeaderComposition } from "./components/Header/src/components/pattern";
 // import Accordion from "./hooks/components/accordion/index";
 // import Square from "./styles/styled-component/components/Square";
 // import Headline from "./styles/css-modules/components/Headline";
-import FooterComposition from "./styles/styled-component/components/Footer/src/pattern";
+import FooterComposition from "./styles/tailwind/Footer/src/pattern";
 
 function App() {
   return (
