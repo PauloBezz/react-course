@@ -3,6 +3,7 @@ import wing from "./svg/wing.png";
 import { useState } from "react";
 import { up, down } from "./svg/index";
 import DropMenu from "../DropMenu/src";
+import { Link } from "react-router-dom";
 
 export default function Navbar(props) {
   const [visible, setVisible] = useState();
@@ -17,14 +18,14 @@ export default function Navbar(props) {
       <img src={wing} alt="Logo" className={styles.logo} />
       <div className={styles.column}>
         <div className={styles.links}>
-          <button>{props.one}</button>
-          <button>{props.two}</button>
-          <button>{props.three}</button>
-          <button className={styles.menuDown} onClick={handleAngle}>
+          <Link className={styles.link} to={"/teams"}>{props.one}</Link>
+          <Link className={styles.link}>{props.two}</Link>
+          <Link className={styles.link}>{props.three}</Link>
+          <Link className={styles.menuDown} onClick={handleAngle}>
             {props.four}
             <img src={Angle} alt="angle" />
             {visible && <DropMenu />}
-          </button>
+          </Link>
         </div>
         <div className={styles.buttons}>
           <button>{props.buttonOne}</button>
