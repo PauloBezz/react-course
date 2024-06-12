@@ -1,71 +1,66 @@
 .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: aliceblue;
-    width: 100%;
-    height: 73px;
-    padding: 16px 64px;
-    border-bottom: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: aliceblue;
+  width: 100%;
+  height: 73px;
+  padding: 16px 64px;
+  border-bottom: 1px solid black;
 }
 
-.logo{
-    width: 63px;
+.logo {
+  width: 63px;
 }
 
-.column{
-    display: flex;
-    gap: 16px;
+.column {
+  display: flex;
+  gap: 16px;
 }
 
 .links {
-    display: flex;
-    gap: 32px;
+  display: flex;
+  gap: 32px;
 }
 
-.button{
-    display: flex;
-    gap: 16px;
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.menuDown{
-    display: flex;
-    align-items: center;
-    gap: 4px;
+.menuDown {
+  display: flex;
+  align-items: center;
+  gap: 4px;
 }
 
-.buttons{
-    display: flex;
-    gap: 16px;
+.buttons {
+  display: flex;
+  gap: 16px;
 }
 
-.buttons > button{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.buttons :first-child {
+  display: flex;
+  width: 88px;
+  height: 40px;
+  padding: 8px 20px;
+  border: 1px solid black;
 }
 
-.buttons :first-child{
-    display: flex;
-    width: 88px;
-    height: 40px;
-    padding: 8px 20px;
-    border: 1px solid black;
+.buttons :last-child {
+  display: flex;
+  width: 88px;
+  height: 40px;
+  background-color: black;
+  padding: 8px 20px;
+  color: white;
 }
 
-.buttons :last-child{
-    display: flex;
-    width: 88px;
-    height: 40px;
-    background-color: black;
-    padding: 8px 20px;
-    color: white;
-}
-
-.content{
-    display: absolute;
-    top: 0;
-    background: #000;
-    width: 20px;
-    height: 20px;
+.content {
+  display: absolute;
+  top: 0;
+  background: #000;
+  width: 20px;
+  height: 20px;
 }
