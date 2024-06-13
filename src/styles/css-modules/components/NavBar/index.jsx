@@ -19,7 +19,7 @@ export default function Navbar(props) {
       <div className={styles.column}>
         <div className={styles.links}>
           <Link className={styles.link} to={"/teams"}>{props.one}</Link>
-          <Link className={styles.link}>{props.two}</Link>
+          <Link className={styles.link} to={"/about"}>{props.two}</Link>
           <Link className={styles.link}>{props.three}</Link>
           <Link className={styles.menuDown} onClick={handleAngle}>
             {props.four}
