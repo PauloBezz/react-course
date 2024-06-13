@@ -1,4 +1,4 @@
-import { ActionCancel, HeaderContainer } from "./style";
+import { HeaderContainer } from "./style";
 import { Header } from "./composition";
 
 export function HeaderComposition() {
