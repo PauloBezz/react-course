@@ -11,6 +11,8 @@ Projeto criado para aprender React com Lucas Correa no SENAI Suiço-Brasileira
    - Importância do foco ao codar.
    - Desenvolvimento da autonomia para encontrar e corrigir erros.
    - Diferentes maneiras de estilizar o código.
+   - Consumo de Api.
+   - Framework Jest para teste.
 
 # Quais novas estruturas de estilização com CSS aprendemos?
 
