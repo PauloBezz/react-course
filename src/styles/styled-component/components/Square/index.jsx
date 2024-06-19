@@ -1,3 +1,4 @@
+import React from "react";
 import { SquareContainer, SquareLink } from "./style";
 
 export default function Square(props) {
