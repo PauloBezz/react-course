@@ -1,10 +1,10 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import TeamComposition from "./components/Team";
-import Price from "./styles/tailwind/Price/src";
 import GetPokemon from "./pages/Pokemon/src";
 import Home from "./pages/Home";
 import GetCep from "./request";
+import About from "./styles/tailwind/About/src";
 // import Home from "./pages/Home";
 // import About from "./styles/tailwind/About/src";
 // import { Titulo } from "./styles.c/css-modules/components/Titulo"
@@ -19,7 +19,7 @@ function App() {
         <Route exact path="/" Component={Home}></Route>
         <Route exact path="/teams" Component={TeamComposition}></Route>
         <Route exact path="/cep" Component={GetCep}></Route>
-        <Route exact path="/price" Component={Price}></Route>
+        <Route exact path="/about" Component={About}></Route>
         <Route exact path="/pokemon" Component={GetPokemon}></Route>
       </Routes>
     </body>
