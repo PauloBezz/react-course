@@ -4,8 +4,7 @@ import TeamComposition from "./components/Team";
 import GetPokemon from "./pages/Pokemon/src";
 import Home from "./pages/Home";
 import GetCep from "./request";
-import About from "./styles/tailwind/About/src";
-// import Home from "./pages/Home";
+import Login from "./pages/Login";
 // import About from "./styles/tailwind/About/src";
 // import { Titulo } from "./styles.c/css-modules/components/Titulo"
 // import Accordion from "./hooks/components/accordion/index";
@@ -19,7 +18,7 @@ function App() {
         <Route exact path="/" Component={Home}></Route>
         <Route exact path="/teams" Component={TeamComposition}></Route>
         <Route exact path="/cep" Component={GetCep}></Route>
-        <Route exact path="/about" Component={About}></Route>
+        <Route exact path="/login" Component={Login}></Route>
         <Route exact path="/pokemon" Component={GetPokemon}></Route>
       </Routes>
     </body>
