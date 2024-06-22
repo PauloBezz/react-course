@@ -13,7 +13,6 @@ import Login from "./pages/Login";
 
 function App() {
   return (
-    <body className="bg-[#FFEBB7]">
       <Routes>
         <Route exact path="/" Component={Home}></Route>
         <Route exact path="/teams" Component={TeamComposition}></Route>
@@ -21,7 +20,6 @@ function App() {
         <Route exact path="/login" Component={Login}></Route>
         <Route exact path="/pokemon" Component={GetPokemon}></Route>
       </Routes>
-    </body>
   );
 }
 

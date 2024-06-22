@@ -4,19 +4,19 @@ import DropCard from "../../../../styled-component/components/CardDrop/src";
 export default function DropMenu() {
   const Cards = [
     {
-      page: "Page one",
+      page: "Finance",
       description: "Lorem ipsum dolor sit amet consectetur elit",
     },
     {
-      page: "Page two",
+      page: "Streets",
       description: "Lorem ipsum dolor sit amet consectetur elit",
     },
     {
-      page: "Page three",
+      page: "Sports",
       description: "Lorem ipsum dolor sit amet consectetur elit",
     },
     {
-      page: "Page four",
+      page: "Foods",
       description: "Lorem ipsum dolor sit amet consectetur elit",
     }
   ];

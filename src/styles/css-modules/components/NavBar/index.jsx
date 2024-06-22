@@ -23,7 +23,7 @@ export default function Navbar(props) {
           <Link className={styles.link} to={"/login"}>{props.three}</Link>
           <Link className={styles.link} to={"/pokemon"}>{props.four}</Link>
           <Link className={styles.menuDown} onClick={handleAngle}>
-            {props.four}
+            {props.five}
             <img src={Angle} alt="angle" />
             {visible && <DropMenu />}
           </Link>

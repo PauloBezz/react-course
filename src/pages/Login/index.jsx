@@ -10,24 +10,26 @@ export default function Login() {
         <img src={logo} alt="logo" />
         <h1>Login</h1>
         <h3>Enter your email and password:</h3>
-        <div>
+        <div className="user-input">
           <h5>Username</h5>
-          <Input></Input>
+          <Input className="input" />
         </div>
 
-        <div>
+        <div className="user-input">
           <h5>Password</h5>
-          <Input></Input>
+          <Input className="input" />
         </div>
 
         <div className="actions">
           <p>Forgot your password?</p>
-          <Button>Lets' go</Button>
+          <Button variant="outlined" className="btn-go"><p>Lets' go</p></Button>
         </div>
       </aside>
 
       <article>
-        <img src={image} alt="Imagem" />
+        <div className="rec"></div>
+        <img src={image} className="image" />
+        <div className="rec"></div>
       </article>
     </section>
   );

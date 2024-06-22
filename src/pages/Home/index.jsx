@@ -6,17 +6,20 @@ import FooterComposition from "../../styles/tailwind/Footer/src/pattern";
 export default function Home() {
   return (
     <>
-      <Navbar
-        one={"Teams"}
-        two={"Cep"}
-        three={"Login"}
-        four={"Pokemon"}
-        buttonOne={"Button"}
-        buttonTwo={"Button"}
-      />
-      <HeaderComposition />
-      <BlogComposition />
-      <FooterComposition />
+      <body className="bg-[#FFEBB7]">
+        <Navbar
+          one={"Teams"}
+          two={"Cep"}
+          three={"Login"}
+          four={"Pokemon"}
+          five={"More"}
+          buttonOne={"Button"}
+          buttonTwo={"Button"}
+        />
+        <HeaderComposition />
+        <BlogComposition />
+        <FooterComposition />
+      </body>
     </>
   );
 }

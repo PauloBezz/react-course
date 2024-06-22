@@ -1,9 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Klee+One&display=swap');
+
+
+
 section {
     display: flex;
-    padding: 36px;
     justify-content: space-between;
+    height: fit-content;
+    padding: 36px;
     gap: 12px;
-    height: auto;
 }
 
 aside {
@@ -13,16 +17,83 @@ aside {
     align-items: center;
     justify-content: center;
     background-color: white;
-    
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+aside>img {
+    height: 146px;
+}
+
+aside>h1 {
+    font-size: 44px;
+    font-family: "Klee One";
+    margin-bottom: 16px;
+}
+
+aside>h3 {
+    font-size: 16px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-bottom: 16px;
+}
+
+.user-input {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 16px;
+}
+
+.user-input > h5 {
+    font-size: 12px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    margin-bottom: 4px;
+    margin-left: 2px;
+}
+
+.input {
+    width: 402px;
+    border: 1px solid #FEAE00;
+    border-radius: 4px;
+    padding-left: 4px;
+}
+
+.btn-go {
+    width: 196px;
+    height: 48px;
+}
+
+.btn-go > p {
+    font-size: 24px;
+    font-family: "Klee One";
 }
 
 .actions {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 104px;
+    margin-top: 32px;
 }
 
-article{
+.actions > p {
+    font-size: 12px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: red;
+}
+
+article {
     display: flex;
+    justify-content: center;
     width: 50%;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+.rec {
+    width: 20%;
+    background-color: #FEAE00;
+    opacity: 0.4;
+    border-radius: 4px;
 }
