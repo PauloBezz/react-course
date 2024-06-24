@@ -10,11 +10,11 @@ export default function Home() {
         <Navbar
           one={"Teams"}
           two={"Cep"}
-          three={"Login"}
-          four={"Pokemon"}
+          three={"Pokemon"}
+          four={"About"}
           five={"More"}
-          buttonOne={"Button"}
-          buttonTwo={"Button"}
+          buttonOne={"Sing up"}
+          buttonTwo={"Login"}
         />
         <HeaderComposition />
         <BlogComposition />

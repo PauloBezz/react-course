@@ -1,9 +1,9 @@
 import styles from "./styles.module.css";
-import wing from "./svg/wing.png";
 import { useState } from "react";
 import { up, down } from "./svg/index";
-import DropMenu from "../DropMenu/src";
+import wing from "./svg/wing.png";
 import { Link } from "react-router-dom";
+import DropMenu from "../DropMenu/src";
 
 export default function Navbar(props) {
   const [visible, setVisible] = useState();
@@ -20,8 +20,8 @@ export default function Navbar(props) {
         <div className={styles.links}>
           <Link className={styles.link} to={"/teams"}>{props.one}</Link>
           <Link className={styles.link} to={"/cep"}>{props.two}</Link>
-          <Link className={styles.link} to={"/login"}>{props.three}</Link>
-          <Link className={styles.link} to={"/pokemon"}>{props.four}</Link>
+          <Link className={styles.link} to={"/pokemon"}>{props.three}</Link>
+          <Link className={styles.link} to={"/about"}>{props.four}</Link>
           <Link className={styles.menuDown} onClick={handleAngle}>
             {props.five}
             <img src={Angle} alt="angle" />
@@ -29,8 +29,8 @@ export default function Navbar(props) {
           </Link>
         </div>
         <div className={styles.buttons}>
-          <button>{props.buttonOne}</button>
-          <button>{props.buttonTwo}</button>
+          <Link className={styles.link} to={"/sign"}>{props.buttonOne}</Link>
+          <Link className={styles.link} to={"/login"}>{props.buttonTwo}</Link>
         </div>
       </div>
     </div>
