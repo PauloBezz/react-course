@@ -4,10 +4,9 @@ import TeamComposition from "./components/Team";
 import GetPokemon from "./pages/Pokemon/src";
 import Home from "./pages/Home";
 import GetCep from "./request";
-import Login from "./pages/Login";
-import Signin from "./pages/Signin";
+import Login from "./pages/User/components/Login";
+import Signin from "./pages/User/components/Signin";
 import About from "./pages/About";
-// import About from "./styles/tailwind/About/src";
 // import { Titulo } from "./styles.c/css-modules/components/Titulo"
 // import Accordion from "./hooks/components/accordion/index";
 // import Square from "./styles/styled-component/components/Square";
