@@ -1,35 +1,35 @@
 import { Button, Input } from "@mui/material";
 import { Link } from "react-router-dom";
-
+import foto from '../../assets/images/svg/foto.svg';
+import logo from '../../assets/images/svg/leon-logo.svg'
 
 export default function Signin(props) {
     return (
         <>
             <section>
-                <img className="image" />
-                <div className="content">
-                    <img src="" alt="logo" />
+                <img className="foto" src={foto} />
+                <article className="content">
+                    <img src={logo} alt="logo" />
                     <div className="box">
                         <h1>Sign Up</h1>
 
                         <div className="input">
-                            <h3>{props.user}</h3>
-                            <Input />
-                        </div>
-
-
-                        <div className="input">
-                            <h3>{props.email}</h3>
+                            <h2>{props.user}</h2>
                             <Input />
                         </div>
 
                         <div className="input">
-                            <h3>{props.pass}</h3>
+                            <h2>{props.email}</h2>
                             <Input />
                         </div>
 
                         <div className="input">
-                            <h3>{props.confirm}</h3>
+                            <h2>{props.pass}</h2>
+                            <Input />
+                        </div>
+
+                        <div className="input">
+                            <h2>{props.confirm}</h2>
                             <Input />
                         </div>
 
@@ -39,7 +39,7 @@ export default function Signin(props) {
                             <Link className="link" to={"/login"}>Login here</Link>
                         </div>
                     </div>
-                </div>
+                </article>
             </section>
         </>
     )
