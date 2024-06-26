@@ -1,0 +1,33 @@
+.container-sign{
+    display: flex;
+    flex-direction: column;
+    padding: 6px 36px;
+}
+
+.foto {
+    width: 100%;
+}
+
+.content {
+    position: absolute;
+    display: flex;
+    top: 94px;
+    left: 107px;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.logo{
+    width: 133px;
+    border-radius: 8px;
+}
+
+.box{
+    width: 450px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    background-color: white ;
+    opacity: 0.6;
+}
