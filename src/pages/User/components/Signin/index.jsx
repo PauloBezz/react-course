@@ -11,9 +11,16 @@ export default function Signin(props) {
     const [pass, setPass] = useState('')
     const [confpass, setConfpass] = useState('')
 
-    const handleInfo = () => {
-
-        
+    async function handleInfo() {
+        try {
+            if (user !== '') {
+                console.log('Usuário cadastrado')
+            } else {
+                console.log('Usuário não cadastrado')
+            }
+        } catch (error) {
+            console.log('Ocorreu um erro', error)
+        }
     }
 
     return (
@@ -24,28 +31,31 @@ export default function Signin(props) {
                 <article className="box">
                     <h1>Sign Up</h1>
 
-                    <article className="box-input">
+                    <form className="box-input">
                         <h2>{props.user}</h2>
-                        <Input type='text' required disableUnderline className='sign-input' value={user} onChange={(e) => setUser(e.target.value)} />
-                    </article>
+                        <Input type='text' className='sign-input' required disableUnderline value={user} onChange={(e) => setUser(e.target.value)} />
+                    </form>
 
-                    <article className="box-input">
+                    <form className="box-input">
                         <h2>{props.email}</h2>
-                        <Input type='text' required disableUnderline className='sign-input' value={email} onChange={(e) => setEmail(e.target.value)}/>
-                    </article>
+                        <Input type='text' className='sign-input' required disableUnderline value={email} onChange={(e) => setEmail(e.target.value)} />
+                    </form>
 
-                    <article className="box-input">
+                    <form className="box-input">
                         <h2>{props.pass}</h2>
-                        <Input type='password' required disableUnderline className='sign-input' value={pass} onChange={(e) => setPass(e.target.value)} />
-                    </article>
+                        <Input type='password' className='sign-input' autoComplete='string' required disableUnderline value={pass} onChange={(e) => setPass(e.target.value)} />
+                    </form>
 
-                    <article className="box-input">
+                    <form className="box-input">
                         <h2>{props.confirm}</h2>
-                        <Input type='password' required disableUnderline className='sign-input' value={confpass} onChange={(e) => setConfpass(e.target.value)}/>
-                    </article>
+                        <Input type='password' className='sign-input' autoComplete='string' required disableUnderline value={confpass} onChange={(e) => setConfpass(e.target.value)} />
+                    </form>
 
-                    <Button className="btn-create"><p>Create account</p></Button>
-                    <article>
+
+                    <div className="btn-create">
+                        <Button variant='outlined' onClick={handleInfo}><p>Create account</p></Button>
+                    </div>
+                    <article className='account'>
                         <p>Already have an account?</p>
                         <Link className="link-login" to={"/login"}>Login here</Link>
                     </article>
