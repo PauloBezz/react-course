@@ -14,15 +14,22 @@ import About from "./pages/About";
 
 function App() {
   return (
-      <Routes>
-        <Route exact path="/" Component={Home}></Route>
-        <Route exact path="/teams" Component={TeamComposition}></Route>
-        <Route exact path="/cep" Component={GetCep}></Route>
-        <Route exact path="/sign" Component={Signin}></Route>
-        <Route exact path="/login" Component={Login}></Route>
-        <Route exact path="/about" Component={About}></Route>
-        <Route exact path="/pokemon" Component={GetPokemon}></Route>
-      </Routes>
+    <Routes>
+      <Route exact path="/" Component={Home}></Route>
+      <Route exact path="/teams" Component={TeamComposition}></Route>
+      <Route exact path="/cep" Component={GetCep}></Route>
+      <Route exact path="/sign" element={
+        <Signin 
+        user={'Username'}
+        email={'E-mail'}
+        pass={'Password'}
+        confirm={'Confirm password'}
+        />}>
+      </Route>
+      <Route exact path="/login" Component={Login}></Route>
+      <Route exact path="/about" Component={About}></Route>
+      <Route exact path="/pokemon" Component={GetPokemon}></Route>
+    </Routes>
   );
 }
 
