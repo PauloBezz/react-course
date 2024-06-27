@@ -21,15 +21,15 @@ export default function Login() {
         <img src={logo} alt="Logo" />
         <h1>Login</h1>
         <h2>Enter your email and password:</h2>
-        <article className="login-input">
+        <form className="login-input">
           <h3>Username</h3>
-          <Input type="text" disableUnderline='bool' className="input" value={user} onChange={(e) => setUser(e.target.value)} />
-        </article>
+          <Input type="text" required disableUnderline className="input" value={user} onChange={(e) => setUser(e.target.value)} />
+        </form>
 
-        <article className="login-input">
+        <form className="login-input">
           <h3>Password</h3>
-          <Input type="password" disableUnderline='bool' className="input" value={pass} onChange={(e) => setPass(e.target.value)} />
-        </article>
+          <Input type="password" required autoComplete="string" disableUnderline className="input" value={pass} onChange={(e) => setPass(e.target.value)} />
+        </form>
 
         <article className="actions">
           <Link><p className="forgot">Forgot your password?</p></Link>
@@ -39,7 +39,7 @@ export default function Login() {
 
       <section className="login-image">
         <div className="rec"></div>
-        <img src={image} className="Fotográfia" />
+        <img src={image}/>
         <div className="rec"></div>
       </section>
     </main>
