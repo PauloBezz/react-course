@@ -1,0 +1,59 @@
+.column {
+  display: flex;
+  position: absolute;
+  z-index: 15;
+  flex-direction: column;
+  top: 50px;
+  right: 0px;
+  width: 160px;
+  background-color: #FFEBB7;
+  border-radius: 8px;
+  border: 1px solid black;
+  gap: 10px;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 5px;
+  border-bottom: 1px solid #000;
+}
+
+.link {
+  display: flex;
+  height: 30px;
+  width: 100%;
+  justify-content: center;
+}
+
+.menuDown {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 0px;
+  align-items: center;
+  justify-items: center;
+}
+
+.buttons :first-child {
+  height: 30px;
+  padding: 0px 0px;
+  border: 0px solid;
+}
+
+.buttons :last-child {
+  background-color: transparent;
+  height: 30px;
+  padding: 0px 0px;
+  color: black;
+  border-radius: 8px;
+}
