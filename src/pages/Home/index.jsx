@@ -5,21 +5,19 @@ import FooterComposition from "../../styles/tailwind/Footer/src/pattern";
 
 export default function Home() {
   return (
-    <>
-      <body className="bg-[#FFEBB7]">
-        <Navbar
-          one={"Teams"}
-          two={"Cep"}
-          three={"Pokemon"}
-          four={"About"}
-          five={"More"}
-          buttonOne={"Sing up"}
-          buttonTwo={"Login"}
-        />
-        <HeaderComposition />
-        <BlogComposition />
-        <FooterComposition />
-      </body>
-    </>
+    <main className="bg-[#FFEBB7]">
+      <Navbar
+        one="Teams"
+        two="Cep"
+        three="Pokemon"
+        four="About"
+        five="More"
+        buttonOne="Sing up"
+        buttonTwo="Login"
+      />
+      <HeaderComposition />
+      <BlogComposition />
+      <FooterComposition />
+    </main>
   );
 }
