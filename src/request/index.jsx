@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import Navbar from "../styles/css-modules/components/NavBar";
 
 export default function GetCep() {
   const [cep, setCep] = useState(null);
@@ -17,35 +18,47 @@ export default function GetCep() {
     }
   }
   return (
-    <div className="flex flex-col">
-      <div className="flex flex-col items-center justify-center gap-y-4">
-        <h1 className="text text-4xl text-blue-600">Busque seu CEP aqui</h1>
-        <input
-          type="number"
-          name=""
-          id=""
-          className="border-black border-2 rounded-sm"
-          onChange={(e) => setCep(e.target.value)}
-        />
-        <button
-          type="button"
-          onClick={handleAddress}
-          className="flex items-center justify-center p-2 bg-black text-white rounded-sm hover:bg-gray-500 hover:text-black"
-        >
-          Buscar
-        </button>
-      </div>
+    <>
+      <Navbar
+        one="Teams"
+        two="Cep"
+        three="Pokemon"
+        four="About"
+        five="More"
+        buttonOne="Sing up"
+        buttonTwo="Login"
+      />
 
-      {address && (
-        <div className="flex mt-2 items-center justify-center">
-          <div className="flex flex-col gap-y-2">
-            <p>DDD: {address.ddd}</p>
-            <p>Cidade: {address.localidade}</p>
-            <p>Bairro: {address.bairro}</p>
-            <p>{address.logradouro}</p>
-          </div>
+      <div className="flex flex-col">
+        <div className="flex flex-col items-center justify-center gap-y-4">
+          <h1 className="text text-4xl text-blue-600">Busque seu CEP aqui</h1>
+          <input
+            type="number"
+            name=""
+            id=""
+            className="border-black border-2 rounded-sm"
+            onChange={(e) => setCep(e.target.value)}
+          />
+          <button
+            type="button"
+            onClick={handleAddress}
+            className="flex items-center justify-center p-2 bg-black text-white rounded-sm hover:bg-gray-500 hover:text-black"
+          >
+            Buscar
+          </button>
         </div>
-      )}
-    </div>
+
+        {address && (
+          <div className="flex mt-2 items-center justify-center">
+            <div className="flex flex-col gap-y-2">
+              <p>DDD: {address.ddd}</p>
+              <p>Cidade: {address.localidade}</p>
+              <p>Bairro: {address.bairro}</p>
+              <p>{address.logradouro}</p>
+            </div>
+          </div>
+        )}
+      </div>
+    </>
   );
 }

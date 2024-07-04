@@ -1,5 +1,6 @@
 import "./styles.css";
 import { Team } from "./src/pattern/composition";
+import Navbar from "../../styles/css-modules/components/NavBar";
 
 const TeamUsers = [
   {
@@ -78,34 +79,46 @@ const TeamUsers = [
 
 export default function TeamComposition() {
   return (
-    <div className="team-container">
-      <Team.Section
-        tag={"Tagline"}
-        title={"Our Team"}
-        text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. "}
-      />
-      <div className="team-content">
-      {TeamUsers.map((user, key) => {
-        return (
-          <Team.Content
-            key={key}
-            image={user.image}
-            name={user.name}
-            job={user.job}
-            description={user.description}
-            linkedin={user.mediaSocial.linkedin}
-            x={user.x}
-            dribble={user.dribble}
-          />
-        );
-      })}
-      </div>
 
-      <Team.Main
-        title={"We’re hiring!"}
-        text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. "}
-        button={"Open options"}
+    <>
+      <Navbar
+        one={"Teams"}
+        two={"Cep"}
+        three={"Pokemon"}
+        four={"About"}
+        five={"More"}
+        buttonOne={"Sing up"}
+        buttonTwo={"Login"}
       />
-    </div>
+      <div className="team-container">
+        <Team.Section
+          tag={"Tagline"}
+          title={"Our Team"}
+          text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. "}
+        />
+        <div className="team-content">
+          {TeamUsers.map((user, key) => {
+            return (
+              <Team.Content
+                key={key}
+                image={user.image}
+                name={user.name}
+                job={user.job}
+                description={user.description}
+                linkedin={user.mediaSocial.linkedin}
+                x={user.mediaSocial.x}
+                dribble={user.mediaSocial.dribble}
+              />
+            );
+          })}
+        </div>
+
+        <Team.Main
+          title={"We're hiring!"}
+          text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. "}
+          button={"Open options"}
+        />
+      </div>
+    </>
   );
 }

@@ -15,7 +15,9 @@ export default function Navbar(props) {
 
   return (
     <div className={styles.container}>
-      <img src={wing} alt="Logo" className={styles.logo} />
+      <a href="/">
+        <img src={wing} alt="Logo" className={styles.logo} />
+      </a>
       <div className={styles.column}>
         <div className={styles.links}>
           <Link className={styles.link} to={"/teams"}>{props.one}</Link>
