@@ -64,7 +64,6 @@ export default function BlogComposition() {
                 name={info.person.name}
                 date={info.person.date}
                 minutes={info.person.minutes}
-
               />
             )
           })}

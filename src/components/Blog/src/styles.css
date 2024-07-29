@@ -54,13 +54,18 @@
 }
 
 .card-image {
-    width: 416px;
+    width: 413px;
     height: 300px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: aqua;
 }
 
 .card-context {
     display: flex;
-    align-self: center;
+    align-items: center;
     flex-direction: column;
     gap: 8px;
 }
@@ -71,6 +76,7 @@
 }
 
 .card-context>h3 {
+    display: flex;
     font-size: 24px;
     font-weight: 700;
 }
@@ -142,4 +148,28 @@
 .button-container>button {
     font-size: 16px;
     align-self: center;
+}
+
+@media screen and (max-width:432px){
+    .card-container{
+        display: flex;
+        width: 100%;
+        gap: 8px;
+    }
+    .card-image{
+        width: 280px;
+        height: 180px;
+    }
+    .card-context > h3{
+        font-size: 18px ;
+    }
+
+    .card-context > p{
+        width: 100%;
+        font-size: 10px;
+    } 
+
+    .card-person{
+        width: 100%;
+    }
 }
