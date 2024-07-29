@@ -1,5 +1,5 @@
 import styles from "./styles.module.css";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { up, down } from "./svg/index";
 import wing from "./svg/wing.png";
 import { Link } from "react-router-dom";
