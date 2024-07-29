@@ -21,7 +21,7 @@ export const HeaderContainer = styled.header`
 export const SectionContainer = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
+  text-align: center;
   justify-content: space-between;
   margin-top: 112px;
 `;
