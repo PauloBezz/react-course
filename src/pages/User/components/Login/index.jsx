@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Input, Button } from "@mui/material";
 import { Link } from "react-router-dom";
 import logo from "../../assets/images/svg/leon-logo.svg";
+import logoSmall from "../../assets/images/svg/leon-logo-small.svg";
 import image from '../../assets/images/svg/imagem.svg';
 
 export default function Login() {
@@ -18,7 +19,8 @@ export default function Login() {
   return (
     <main className="login-container">
       <section className="login-content">
-        <img src={logo} alt="Logo" />
+        <img src={logo} alt="Logo" className="logo" />
+        <img src={logoSmall} alt="Logo" className="logo-small" />
         <h1>Login</h1>
         <h2>Enter your email and password:</h2>
         <form className="login-input">
@@ -39,7 +41,7 @@ export default function Login() {
 
       <section className="login-image">
         <div className="rec"></div>
-        <img src={image}/>
+        <img src={image} />
         <div className="rec"></div>
       </section>
     </main>

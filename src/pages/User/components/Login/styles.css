@@ -2,34 +2,42 @@
 
 .login-container {
     display: flex;
-    justify-content: space-between;
-    height: auto;
-    padding: 34px;
+    width: 100%;
+    height: 100vh;
+    justify-content: space-around;
+    padding: 34px 10px;
     gap: 12px;
 }
 
 .login-content {
     display: flex;
-    width: 50%;
+    width: 60%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: white;
     border: 1px solid black;
     border-radius: 4px;
+    padding: 0px 100px;
+    
+    z-index: 10;
 }
 
-.login-content > img {
+.logo {
     width: 133px;
 }
 
-.login-content > h1 {
+.logo-small {
+    display: none;
+}
+
+.login-content>h1 {
     font-size: 44px;
     font-family: "Klee One";
     margin-bottom: 16px;
 }
 
-.login-content > h2 {
+.login-content>h2 {
     font-size: 16px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin-bottom: 16px;
@@ -42,7 +50,7 @@
     margin-bottom: 16px;
 }
 
-.login-input > h5 {
+.login-input>h3 {
     font-size: 12px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: bold;
@@ -57,6 +65,19 @@
     padding-left: 4px;
 }
 
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 104px;
+    margin-top: 32px;
+}
+
+.forgot {
+    font-size: 12px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: red;
+}
+
 .btn-go {
     width: 196px;
     height: 48px;
@@ -67,24 +88,11 @@
     font-family: "Klee One";
 }
 
-.actions {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 104px;
-    margin-top: 32px;
-}
-
-.forgot{
-    font-size: 12px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: red;
-}
-
 .login-image {
     display: flex;
+    width: 45%;
     justify-content: center;
-    width: 50%;
+    z-index: 20;
 }
 
 .rec {
@@ -92,4 +100,90 @@
     background-color: #FEAE00;
     opacity: 0.4;
     border-radius: 4px;
+}
+
+@media screen and (max-width: 700px) {
+    .login-container {
+        flex-direction: column;
+        height: auto;
+        padding: 0px;
+        align-items: center;
+        justify-content: center;
+        background-color: #FEAE00;
+    }
+
+    .login-content {
+        position: absolute;
+        top: 300px;
+        background-color: transparent;
+        width: 90%;
+        border: 1px solid #FEAE00;
+        padding: 20px;
+        z-index: 6;
+        background-color: white;
+        opacity: 0.8;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .logo-small {
+        display: flex;
+        align-self: self-start;
+    }
+
+    .login-content>h1 {
+        font-size: 32px;
+        margin-bottom: 12px;
+    }
+
+    .login-content>h2 {
+        font-size: 12px;
+    }
+
+    .login-input {
+        gap: 0px;
+        margin-bottom: 12px;
+    }
+
+    .login-input>h3 {
+        font-size: 12px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+    }
+
+    .input {
+        width: 100%;
+    }
+
+    .btn-go {
+        width: 150px;
+        height: 35px;
+    }
+
+    .btn-go>p {
+        font-size: 18px;
+    }
+
+    .actions {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    .login-image {
+        position: fixed;
+        width: 100vw;
+        top: 8%;
+        align-self: center;
+        z-index: 5;
+        background-color: #FEAE00;
+    }
+
+    .rec {
+        display: none;
+    }
+
 }
