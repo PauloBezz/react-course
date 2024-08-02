@@ -24,6 +24,14 @@ export const SectionContainer = styled.div`
   text-align: center;
   justify-content: space-between;
   margin-top: 112px;
+  
+  @media screen and (max-width:400px) {
+    
+    margin-top: 56px;
+  
+  }
+
+
 `;
 
 export const SectionTag = styled.h5`
@@ -37,12 +45,28 @@ export const SectionTitle = styled.h1`
   margin-top: 16px;
   margin-bottom: 24px;
   color: wheat;
+  padding: 10px;
+
+
+  @media screen and (max-width:400px) {
+    font-size: 28px;
+    font-weight: 700;
+    margin-top: 8px;
+    margin-bottom: 12px;
+    padding: 10px;
+
+  }
 `;
 
 export const SectionDescription = styled.p`
   font-size: 18px;
   font-weight: 400;
   color: white;
+  padding: 10px;
+
+  @media screen and (max-width:400px) {
+    font-size: 10px;
+  }
 `;
 
 export const ActionContainer = styled.div`
@@ -51,6 +75,13 @@ export const ActionContainer = styled.div`
   margin-top: 40px;
   margin-bottom: 112px;
   font-size: 16px;
+
+  @media screen and (max-width:400px) {
+    gap: 8px;
+    margin-top: 20px;
+    margin-bottom: 56px;
+    font-size: 12px;
+  }
 `;
 
 export const ActionSubmit = styled.a`
@@ -62,6 +93,11 @@ export const ActionSubmit = styled.a`
   align-items: center;
   justify-content: center;
   color: white;
+
+  @media screen and (max-width:400px) {
+    width: 80px;
+    height: 30px;
+  }
 `;
 
 export const ActionCancel = styled.a`
@@ -73,4 +109,10 @@ export const ActionCancel = styled.a`
   align-items: center;
   justify-content: center;
   border: 1px solid white;
+
+  @media screen and (max-width:400px) {
+    width: 80px;
+    height: 30px;
+    color: white;
+  }
 `;

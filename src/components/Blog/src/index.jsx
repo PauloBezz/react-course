@@ -43,15 +43,14 @@ export const BlogCards = [
 
 export default function BlogComposition() {
   return (
-    <>
-      < div className="blog-container">
+      <section className="blog-container">
         <Blog.Section
           blog={"Blog"}
           title={"Short heading goes here"}
           description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit."}
         />
 
-        <div className="blog-content">
+        <article className="blog-content">
           {BlogCards.map((info, key) => {
             return (
               <Blog.Card
@@ -67,10 +66,9 @@ export default function BlogComposition() {
               />
             )
           })}
-        </div>
+        </article>
 
         <Blog.Button button={"View all"}/>
-      </div >
-    </>
+      </section >
   );
 }

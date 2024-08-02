@@ -6,7 +6,7 @@ export default function Content() {
             <a className="w-16 pb-8" href="/">
                 <img src={logo} alt="logo" />
             </a>
-            <article className="flex flex-wrap gap-x-4 ">
+            <article className="flex flex-wrap gap-x-4 mx-1 justify-center">
                 <button className="px-2 hover:bg-black hover:px-2 hover:rounded border-black hover:text-white">Link One</button>
                 <button className="px-2 hover:bg-black hover:px-2 hover:rounded border-black hover:text-white">Link Two</button>
                 <button className="px-2 hover:bg-black hover:px-2 hover:rounded border-black hover:text-white">Link Three</button>

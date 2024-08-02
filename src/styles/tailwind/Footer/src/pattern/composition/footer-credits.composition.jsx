@@ -1,6 +1,6 @@
 export default function Credits() {
     return (
-        <section className="flex flex-wrap h-14 mb-20 mx-16 items-end border-t-2 border-black justify-around">
+        <section className="flex flex-wrap h-14 mb-20 mx-8 sm:mx-2 items-end border-t-2 border-black justify-around">
             <article>
                 <p>© 2023 Relume. All rights reserved.</p>
             </article>
