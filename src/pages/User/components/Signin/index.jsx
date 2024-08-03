@@ -13,13 +13,20 @@ export default function Signin(props) {
 
     async function handleInfo() {
         try {
-            if (user !== '') {
-                console.log('Usuário cadastrado')
+            if (pass === confpass) {
+                if (user, email, pass && confpass !== '') {
+
+                    alert('Usuário cadastrado')
+                } else {
+                    alert('Usuário não cadastrado')
+                }
             } else {
-                console.log('Usuário não cadastrado')
+                alert('Senhas divergentes!')
             }
         } catch (error) {
-            console.log('Ocorreu um erro', error)
+            alert('Ocorreu um erro', error)
+        } finally {
+            alert('Olá ' + user)
         }
     }
 
@@ -27,7 +34,7 @@ export default function Signin(props) {
         <section className='container-sign'>
             <img className="foto" src={foto} />
             <div className="sign-content">
-                <img src={logo} alt="logo" className="logo" />
+                <img src={logo} alt="logo" className="logo-sign" />
                 <article className="box">
                     <h1>Sign Up</h1>
 
