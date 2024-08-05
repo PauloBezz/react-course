@@ -28,7 +28,7 @@ export default function GetPokemon() {
         buttonOne="Sing up"
         buttonTwo="Login"
       />
-      <div className="flex flex-col items-center justify-center">
+      <section className="flex flex-col items-center justify-center">
         <h1 className="text-2xl">Procure seu pokemon</h1>
         <input type="text" onChange={(e) => setPokemon(e.target.value)} />
         <button
@@ -47,7 +47,7 @@ export default function GetPokemon() {
             />
           </div>
         )}
-      </div>
+      </section>
     </>
   );
 }
