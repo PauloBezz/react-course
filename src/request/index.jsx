@@ -6,15 +6,13 @@ export default function GetCep() {
   const [cep, setCep] = useState(null);
   const [address, setAddress] = useState(null);
 
-  console.log(cep, "cep");
-  console.log(address, "address");
-
   async function handleAddress() {
     try {
       const response = await axios.get(`https://viacep.com.br/ws/${cep}/json/`);
       setAddress(response.data);
     } catch (error) {
-      console.log(error);
+      alert( 'Digite um CEP válido... ');
+      setCep(address)
     }
   }
   return (
@@ -29,36 +27,37 @@ export default function GetCep() {
         buttonTwo="Login"
       />
 
-      <div className="flex flex-col">
-        <div className="flex flex-col items-center justify-center gap-y-4">
-          <h1 className="text text-4xl text-blue-600">Busque seu CEP aqui</h1>
+      <section className="flex w-full h-screen items-center justify-around flex-wrap">
+        <article className="flex flex-col items-center justify-center gap-y-4">
+          <h1 className="text text-2xl text-blue-600">Busque seu CEP aqui</h1>
           <input
             type="number"
             name=""
             id=""
-            className="border-black border-2 rounded-sm"
+            className="border-blue-200 border-2 w-52 rounded"
             onChange={(e) => setCep(e.target.value)}
           />
           <button
             type="button"
             onClick={handleAddress}
-            className="flex items-center justify-center p-2 bg-black text-white rounded-sm hover:bg-gray-500 hover:text-black"
+            className="flex items-center justify-center px-6 py-2
+             bg-black text-white rounded hover:bg-gray-500 hover:text-black"
           >
             Buscar
           </button>
-        </div>
+        </article>
 
         {address && (
-          <div className="flex mt-2 items-center justify-center">
+          <aside className="flex items-center ">
             <div className="flex flex-col gap-y-2">
               <p>DDD: {address.ddd}</p>
               <p>Cidade: {address.localidade}</p>
               <p>Bairro: {address.bairro}</p>
               <p>{address.logradouro}</p>
             </div>
-          </div>
+          </aside>
         )}
-      </div>
+      </section>
     </>
   );
 }
