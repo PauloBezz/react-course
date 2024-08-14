@@ -15,7 +15,6 @@ export default function Signin(props) {
         try {
             if (pass === confpass) {
                 if (user, email, pass && confpass !== '') {
-
                     alert('Usuário cadastrado')
                 } else {
                     alert('Usuário não cadastrado')
@@ -26,36 +25,39 @@ export default function Signin(props) {
         } catch (error) {
             alert('Ocorreu um erro', error)
         } finally {
-            alert('Olá ' + user)
+            if (user, email, pass && confpass !== '') {
+                alert('Olá ' + user)
+            }
         }
     }
 
     return (
         <section className='container-sign'>
             <img className="foto" src={foto} />
-            <div className="sign-content">
+
+            <aside className="sign-content">
                 <img src={logo} alt="logo" className="logo-sign" />
                 <article className="box">
                     <h1>Sign Up</h1>
 
                     <form className="box-input">
                         <h2>{props.user}</h2>
-                        <Input type='text' className='sign-input' required disableUnderline value={user} onChange={(e) => setUser(e.target.value)} />
+                        <Input type='text' className='sign-input' placeholder='Enter your name' required disableUnderline value={user} onChange={(e) => setUser(e.target.value)} />
                     </form>
 
                     <form className="box-input">
                         <h2>{props.email}</h2>
-                        <Input type='text' className='sign-input' required disableUnderline value={email} onChange={(e) => setEmail(e.target.value)} />
+                        <Input type='text' className='sign-input' placeholder='example@gmail.com' required disableUnderline value={email} onChange={(e) => setEmail(e.target.value)} />
                     </form>
 
                     <form className="box-input">
                         <h2>{props.pass}</h2>
-                        <Input type='password' className='sign-input' autoComplete='string' required disableUnderline value={pass} onChange={(e) => setPass(e.target.value)} />
+                        <Input type='password' className='sign-input' placeholder='Set your password' autoComplete='string' required disableUnderline value={pass} onChange={(e) => setPass(e.target.value)} />
                     </form>
 
                     <form className="box-input">
                         <h2>{props.confirm}</h2>
-                        <Input type='password' className='sign-input' autoComplete='string' required disableUnderline value={confpass} onChange={(e) => setConfpass(e.target.value)} />
+                        <Input type='password' className='sign-input' placeholder='Repeat your password' autoComplete='string' required disableUnderline value={confpass} onChange={(e) => setConfpass(e.target.value)} />
                     </form>
 
 
@@ -67,7 +69,7 @@ export default function Signin(props) {
                         <Link className="link-login" to={"/login"}>Login here</Link>
                     </article>
                 </article>
-            </div>
+            </aside>
         </section>
     )
 }
