@@ -6,6 +6,12 @@ export const CardContainer = styled.div`
     height: auto;
     padding: 8px 0px;
     gap: 12px;
+
+    &:hover{
+        color: aliceblue;
+        background-color: grey;
+        border-radius: 2px;
+    }
 `
 
 export const CardText = styled.div`
