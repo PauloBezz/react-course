@@ -1,6 +1,6 @@
 .container-sign {
     display: flex;
-    height: 98vh;
+    height: 100vh;
     flex-direction: column;
     padding: 34px 0px 34px 6px;
     background-color: #7F838F;
@@ -8,7 +8,7 @@
 
 .foto {
     width: 100%;
-    height: 953px;
+    height: 100%;
     object-fit: cover;
     object-position: top;
 }
@@ -107,17 +107,18 @@
 @media screen and (max-width:700px) {
     .container-sign {
         padding: 0px;
-        align-items: center;
         justify-content: center;
     }
 
     .foto {
-        margin-top: 50px;
-        height: 85vh;
+        margin-top: 0px;
+        align-self: center;
+        height: 80%;
     }
 
     .sign-content {
-        left: calc(5%);
+        left: -50%;
+        right: -50%;
     }
     .logo-sign {
         width: 75px;
