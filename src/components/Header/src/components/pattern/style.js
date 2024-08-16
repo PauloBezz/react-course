@@ -26,12 +26,8 @@ export const SectionContainer = styled.div`
   margin-top: 112px;
   
   @media screen and (max-width:400px) {
-    
     margin-top: 56px;
-  
   }
-
-
 `;
 
 export const SectionTag = styled.h5`
@@ -88,6 +84,7 @@ export const ActionSubmit = styled.a`
   width: 96px;
   height: 48px;
   background-color: black;
+  border-radius: 10px;
 
   display: flex;
   align-items: center;
@@ -104,6 +101,7 @@ export const ActionCancel = styled.a`
   width: 96px;
   height: 48px;
   background-color: transparent;
+  border-radius: 10px;
 
   display: flex;
   align-items: center;

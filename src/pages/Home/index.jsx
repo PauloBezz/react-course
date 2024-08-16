@@ -9,7 +9,7 @@ export default function Home() {
       <Navbar
         one="Teams"
         two="Cep"
-        three="Pokemon"
+        three="Pokémon"
         four="About"
         five="More"
         buttonOne="Sing up"

@@ -37,12 +37,19 @@
 .link:hover {
   color: aliceblue;
   background-color: grey;
+  border-radius: 10px;
 }
 
 .menuDown {
   display: flex;
   align-items: center;
   gap: 4px;
+}
+
+.menuDown:hover {
+  border-radius: 10px;
+  background-color: grey;
+  color: aliceblue;
 }
 
 .buttons {
@@ -56,6 +63,7 @@
   height: 40px;
   padding: 8px 10px;
   border: 1px solid black;
+  border-radius: 10px;
 }
 
 .buttons :last-child {
@@ -65,6 +73,7 @@
   background-color: black;
   padding: 8px 10px;
   color: white;
+  border-radius: 10px;
 }
 
 .content {
@@ -92,11 +101,11 @@
   .column {
     display: none;
   }
-  
+
   .logo {
     width: 50px;
   }
-  
+
   .links {
     display: none;
     flex-direction: column;
@@ -111,8 +120,8 @@
     height: 30px;
     width: 100%;
   }
-  
-  .menuDown{
+
+  .menuDown {
     display: flex;
     width: 100%;
     justify-content: center;
